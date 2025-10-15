@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María González - Tarjeta Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <div class="container">
+        <div class="card">
+            <div class="profile-image">
+                <img src="img/image.png" alt="JHON MARLON CHAVARRIA MARTINEZ">
+            </div>
+
+            <h1 class="name">Guido Pastor Escobar Ibañez</h1>
+            <p class="title">Encargado Del Area de Sistemas Informáticos y Desarrollo  </p>
+            <p class="company">Consultora Confia Cont</p>
+
+            <div class="contact-buttons">
+                <a href="https://wa.me/59169417161" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61557771100488" class="btn btn-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </a>
+                <a href="mailto:confiacon14@gmail.com" class="btn btn-email">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+                <a href="tel:+59169417161" class="btn btn-call">
+                    <i class="fas fa-phone"></i>
+                    Llamar
+                </a>
+            </div>
+
+            <div class="qr-section">
+                <h2 class="qr-title">Escanea para guardar contacto</h2>
+                <div class="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN:VCARD%0AVERSION:3.0%0AFN:María González%0AORG:Innovación Corporativa S.L.%0ATITLE:Directora de Marketing Digital%0ATEL:+1234567890%0AEMAIL:maria.gonzalez@innovacion.com%0AEND:VCARD" alt="QR Code">
+                </div>
+                <p class="qr-instruction">Escanea con tu cámara para agregar a contactos</p>
+            </div>
+        </div>
+<!--
+        <div class="social-section">
+            <h2 class="social-title">Sígueme en redes sociales</h2>
+            <div class="social-icons">
+                <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com" class="social-icon twitter" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" class="social-icon instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://ejemplo.com" class="social-icon website" aria-label="Sitio web">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+        </div>
+-->
+        <div class="footer">
+            © 2025 JHON MARLON CHAVARRIA MARTINEZ. Tarjeta digital profesional.
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

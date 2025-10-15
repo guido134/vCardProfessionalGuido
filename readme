@@ -1,0 +1,347 @@
+# 💼 Tarjeta Digital Profesional
+
+Tarjeta de presentación digital interactiva y responsive, diseñada para profesionales que buscan una presencia moderna y elegante en el mundo digital.
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+## 🌟 Características
+
+- ✨ **Diseño Moderno**: Interfaz limpia, profesional y atractiva
+- 📱 **Totalmente Responsive**: Se adapta perfectamente a todos los dispositivos
+- 🌙 **Modo Oscuro/Claro**: Alternancia suave entre temas con preferencia guardada
+- 🎨 **Animaciones Fluidas**: Efectos hover y transiciones elegantes
+- 📧 **Contacto Directo**: Botones funcionales para WhatsApp, Email, Teléfono y Facebook
+- 📱 **QR Dinámico**: Código QR generado automáticamente con datos vCard
+- 🔗 **Redes Sociales**: Íconos interactivos para LinkedIn, Twitter, Instagram y sitio web
+- 🎯 **SEO Optimizado**: Etiquetas meta y estructura semántica
+- ⚡ **Carga Rápida**: Sin dependencias pesadas, solo Font Awesome desde CDN
+- 💾 **Sin Almacenamiento Local**: Funciona completamente en memoria
+- 📁 **Código Modular**: CSS y JavaScript en archivos separados para mejor mantenimiento
+
+## 🎨 Paleta de Colores
+
+```css
+Rosa Fuerte: #d9537a
+Rojo Vino: #c24057
+Blanco: #ffffff
+Gris Claro: #b2b2b2
+Fondo Claro: #f5f5f5
+Fondo Oscuro: #1a1a1a
+```
+
+## 🚀 Demo en Vivo
+
+[Ver Demo](https://tu-usuario.github.io/tarjeta-digital) _(Configura GitHub Pages para activar)_
+
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5**: Estructura semántica
+- **CSS3**: Estilos modernos con variables CSS y Grid/Flexbox
+- **JavaScript Vanilla**: Funcionalidad sin frameworks
+- **Font Awesome 6.4.0**: Iconografía profesional
+- **QR Server API**: Generación dinámica de códigos QR
+
+## 📦 Instalación
+
+### Opción 1: Clonar el Repositorio
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/tarjeta-digital.git
+
+# Navegar al directorio
+cd tarjeta-digital
+
+# Abrir en el navegador
+# Simplemente abre el archivo index.html en tu navegador favorito
+```
+
+### Opción 2: Descargar ZIP
+
+1. Descarga el archivo ZIP del repositorio
+2. Extrae los archivos
+3. Abre `index.html` en tu navegador
+
+### Opción 3: GitHub Pages
+
+1. Haz fork del repositorio
+2. Ve a Settings > Pages
+3. Selecciona la rama `main` como fuente
+4. Tu tarjeta estará disponible en `https://tu-usuario.github.io/tarjeta-digital`
+
+## 📊 Estructura de Archivos
+
+```
+tarjeta-digital/
+│
+├── index.html              # Archivo principal HTML
+│
+├── css/
+│   └── styles.css          # Estilos CSS
+│
+├── js/
+│   └── script.js           # Funcionalidad JavaScript
+│
+├── README.md               # Documentación
+└── LICENSE                 # Licencia MIT
+```
+
+## ⚙️ Configuración
+
+### 1. Datos Personales
+
+Edita las siguientes secciones en `index.html`:
+
+```html
+<!-- Nombre y título -->
+<h1 class="name">Tu Nombre Completo</h1>
+<p class="title">Tu Cargo Profesional</p>
+<p class="company">Tu Empresa S.L.</p>
+```
+
+### 2. Foto de Perfil
+
+Reemplaza la URL de la imagen o usa una imagen local:
+
+```html
+<div class="profile-image">
+    <img src="img/perfil.jpg" alt="Tu Nombre">
+</div>
+```
+
+**Recomendación**: Crea una carpeta `img/` para tus imágenes y mantén el proyecto organizado.
+
+### 3. Enlaces de Contacto
+
+Actualiza los enlaces con tu información en `index.html`:
+
+```html
+<!-- WhatsApp (reemplaza con tu número internacional) -->
+<a href="https://wa.me/521234567890" class="btn btn-whatsapp">
+
+<!-- Email -->
+<a href="mailto:tu.email@empresa.com" class="btn btn-email">
+
+<!-- Teléfono -->
+<a href="tel:+521234567890" class="btn btn-call">
+
+<!-- Facebook -->
+<a href="https://facebook.com/tu-perfil" class="btn btn-facebook">
+```
+
+### 4. Redes Sociales
+
+Actualiza los enlaces de redes sociales en `index.html`:
+
+```html
+<a href="https://linkedin.com/in/tu-perfil" class="social-icon linkedin">
+<a href="https://twitter.com/tu-usuario" class="social-icon twitter">
+<a href="https://instagram.com/tu-usuario" class="social-icon instagram">
+<a href="https://tu-sitio-web.com" class="social-icon website">
+```
+
+### 5. Código QR
+
+El código QR se genera automáticamente con los datos vCard. Personaliza los datos en la URL del `index.html`:
+
+```html
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN:VCARD%0AVERSION:3.0%0AFN:Tu Nombre%0AORG:Tu Empresa%0ATITLE:Tu Cargo%0ATEL:+1234567890%0AEMAIL:tu@email.com%0AEND:VCARD">
+```
+
+## 🎨 Personalización de Colores
+
+Para cambiar la paleta de colores, edita las variables CSS en `css/styles.css`:
+
+```css
+:root {
+    --primary-pink: #d9537a;    /* Color principal rosa */
+    --primary-red: #c24057;     /* Color secundario rojo */
+    --white: #ffffff;           /* Blanco */
+    --light-gray: #b2b2b2;      /* Gris claro */
+    --bg-light: #f5f5f5;        /* Fondo modo claro */
+    --text-dark: #333333;       /* Texto oscuro */
+}
+```
+
+## 📱 Características Responsive
+
+La tarjeta se adapta automáticamente a diferentes tamaños de pantalla:
+
+- **Desktop** (>768px): Diseño completo con dos columnas para botones
+- **Tablet** (480px-768px): Ajuste de espaciados
+- **Mobile** (<480px): Una columna, botones full-width, textos ajustados
+
+## 🌙 Modo Oscuro
+
+El modo oscuro se activa mediante el botón flotante en la esquina superior derecha. La preferencia se guarda automáticamente en el navegador usando `localStorage`.
+
+**Características del modo oscuro:**
+- Fondo oscuro (#1a1a1a)
+- Texto claro para mejor legibilidad
+- Mantiene los colores corporativos
+- Transiciones suaves
+- Persistencia entre sesiones
+
+## 🔧 Funcionalidades JavaScript
+
+El archivo `js/script.js` contiene:
+
+### Toggle de Tema
+
+```javascript
+function toggleTheme() {
+    // Alterna entre modo claro y oscuro
+    // Guarda la preferencia del usuario
+    // Cambia el ícono del botón
+}
+```
+
+### Carga de Tema Guardado
+
+```javascript
+window.addEventListener('DOMContentLoaded', () => {
+    // Carga el tema guardado al iniciar
+});
+```
+
+## 🌐 Compatibilidad de Navegadores
+
+| Navegador | Versión Mínima |
+|-----------|----------------|
+| Chrome    | 90+            |
+| Firefox   | 88+            |
+| Safari    | 14+            |
+| Edge      | 90+            |
+| Opera     | 76+            |
+
+## 🚀 Despliegue
+
+### GitHub Pages
+
+1. Sube tu proyecto a GitHub
+2. Ve a **Settings** > **Pages**
+3. En **Source**, selecciona la rama `main` y carpeta `/ (root)`
+4. Haz clic en **Save**
+5. Tu sitio estará disponible en `https://tu-usuario.github.io/tarjeta-digital`
+
+### Netlify
+
+1. Arrastra la carpeta del proyecto a [Netlify Drop](https://app.netlify.com/drop)
+2. Tu sitio se publicará automáticamente
+
+### Vercel
+
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
+
+# Desplegar
+vercel
+```
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Por favor:
+
+1. Haz fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add: nueva característica'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+### Guía de Estilo
+
+- Mantén el código limpio y comentado
+- Usa nombres de variables descriptivos en español
+- Respeta la estructura de archivos (CSS en `css/`, JS en `js/`)
+- Prueba en múltiples navegadores antes de hacer PR
+
+## 📝 Roadmap
+
+- [ ] Generador automático de QR desde el formulario
+- [ ] Exportación a PDF
+- [ ] Modo de edición en vivo
+- [ ] Múltiples temas de color predefinidos
+- [ ] Integración con APIs de redes sociales
+- [ ] Estadísticas de visitas
+- [ ] PWA (Progressive Web App)
+- [ ] Selector de idiomas (ES/EN)
+- [ ] Animaciones 3D opcionales
+- [ ] Integración con Google Analytics
+
+## 🐛 Reporte de Bugs
+
+Si encuentras algún bug, por favor abre un [issue](https://github.com/guido134/tarjeta-digital/issues) con:
+
+- Descripción del problema
+- Pasos para reproducirlo
+- Navegador y versión
+- Capturas de pantalla (si aplica)
+
+## 💡 Mejores Prácticas
+
+### Optimización de Imágenes
+
+- Usa imágenes optimizadas (WebP preferentemente)
+- Tamaño recomendado para foto de perfil: 400x400px
+- Comprime las imágenes antes de subirlas
+
+### Performance
+
+- Los archivos CSS y JS están minificados para producción
+- Font Awesome se carga desde CDN para mejor caching
+- Sin dependencias externas pesadas
+
+### Seguridad
+
+- No incluyas información sensible en el código
+- Valida los enlaces externos
+- Mantén actualizadas las dependencias
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+```
+MIT License
+
+Copyright (c) 2025 [Tu Nombre]
+
+Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia
+de este software y archivos de documentación asociados (el "Software"), para usar
+el Software sin restricciones...
+```
+
+## 🙏 Agradecimientos
+
+- [Font Awesome](https://fontawesome.com) por los íconos
+- [QR Server API](https://goqr.me/api/) por la generación de códigos QR
+- [Unsplash](https://unsplash.com) por las imágenes de ejemplo
+- Comunidad de desarrolladores por el feedback
+
+## 📚 Recursos Adicionales
+
+- [Guía de vCard](https://en.wikipedia.org/wiki/VCard) - Formato de tarjetas digitales
+- [CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/) - Referencia de CSS Grid
+- [JavaScript ES6+](https://es6-features.org/) - Características modernas de JavaScript
+
+## ⭐ Dale una Estrella
+
+Si este proyecto te fue útil, ¡considera darle una estrella en GitHub! ⭐
+
+## 📈 Estado del Proyecto
+
+**Activo** - En desarrollo y mantenimiento continuo
+
+**Última actualización**: Octubre 2025
+
+---
+
+**Hecho con ❤️ por profesionales para profesionales**
+
+[⬆ Volver arriba](#-tarjeta-digital-profesional)
